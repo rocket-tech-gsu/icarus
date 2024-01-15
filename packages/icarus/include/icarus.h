@@ -2,8 +2,13 @@
 
 #include <SD.h>
 #include <Wire.h>
+#include <ESP32Servo.h>
 #include <SoftwareSerial.h>
 #include <TinyGPS++.h>
+#include <Adafruit_BMP085.h>
+
+#include "setup.h"
+#include "utils.h"
 
 // libc++ definitions
 #define EXIT_FAILURE 1
