@@ -50,7 +50,16 @@ void setup_components()
 	}
 	else
 	{
-		Serial.println("GPS failed, or not present");
-		exit(2);
+		Serial.println("[-] GPS setup failed – GPS failed or not present");
+		exit(EXIT_FAILURE);
 	}
+
+	// gotta find out what this is about
+	delay(7000);
+	tone(6, 200, 500);
+	delay(500);
+	tone(6, 200, 500);
+	delay(500);
+	tone(6, 200, 500);
+	delay(500);
 }
